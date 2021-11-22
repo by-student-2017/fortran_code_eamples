@@ -33,12 +33,12 @@
       sss=sss*h*pi/4.d0*(b-a)
       write(6,100) ne,sss
  100  format(2x,' ne = ', i5, ' sss = ', 1pe16.9)
-      end
+      end program double
 
       subroutine func(x,f)
       implicit real*8 (a-h,o-z)
       pi=dacos(-1.d0)
       f=dsin(pi/2.d0*(x+1.d0))
       return
-      end
+      end subroutine func
 

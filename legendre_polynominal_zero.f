@@ -1,4 +1,4 @@
-      program main
+      program legtst
       implicit real*8 (a-h,o-z)
       dimension xp(0:200),xq(0:200)
         m=40
@@ -9,7 +9,7 @@
    10   continue
         write(6,*) '2*sss = ',2*sss
       stop
-      end
+      end program legtst
 
       subroutine leg(m,xp,xq)
       implicit real*8 (a-h,o-z)
@@ -99,4 +99,4 @@
         write(6,650)(k,xp(k),xq(k),k=1,m-1)
   650   format(2x,'k=',i3,6x,'y=',d14.7,6x,'w=',d14.7)
       return
-      end
+      end subroutine leg
