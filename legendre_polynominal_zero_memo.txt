@@ -1,0 +1,27 @@
+      subroutine leg(m,xp,xq)
+     c this subroutine gives the collocation points and coefficients
+     c in gauss-legendre integral method by bisection method
+     c
+     c p(n)(x) = 0, (x = x1, x2, x3, ..., xn)
+     c
+     c
+     c even function n = 2*mm
+     c
+     c -1                   0                      +1
+     c  --------------------------------------------
+     c  0 1             mm     mm+1           2*mm 2*mm+1
+     c    *             *             
+     c             2*mm collocation points
+     c
+     c odd function n = 2*mm-1
+     c
+     c -1                   0                      +1
+     c  --------------------------------------------
+     c  0 1                mm     m         2*mm-1 2*mm
+     c    *                 *
+     c             2*mm-1 collocation points
+     c
+     c
+     c   +1
+     c integ f(x) = sigma xq(k) * f(xp(k))
+     c   -1         k=1,n

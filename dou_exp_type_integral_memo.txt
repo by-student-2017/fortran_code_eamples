@@ -1,0 +1,6 @@
+c program for integration
+c by Double Exponential Type Integration Method
+c
+c example integral (from -1 to 1) sin((x+1)*pi/2) dx = 4/pi
+c
+c gives the value for rl and ne
